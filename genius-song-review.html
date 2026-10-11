@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Genius Song Review (2026): A Skeptic's Honest Breakdown | Siemek Reviews</title>
+<meta name="description" content="A former federal cybersecurity investigator reviews The Genius Song brainwave audio program. What checked out, what's marketing hype, and who it's actually for.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0D18;
+    --panel:#121729;
+    --panel-2:#171D33;
+    --gold:#C9A227;
+    --gold-soft:#E3C560;
+    --wave:#7B8CFF;
+    --text:#E9EAF2;
+    --muted:#9AA0B5;
+    --line:rgba(233,234,242,.12);
+    --good:#6FCF97;
+    --warn:#E8B44C;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);
+    color:var(--text);
+    font-family:'Atkinson Hyperlegible',sans-serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
+
+  /* Disclosure bar */
+  .disclosure-bar{
+    background:var(--panel);
+    border-bottom:1px solid var(--line);
+    padding:9px 0;
+    font-size:12.5px;
+    color:var(--muted);
+    text-align:center;
+    letter-spacing:.02em;
+  }
+  .disclosure-bar strong{color:var(--gold-soft);font-weight:700}
+
+  /* Hero */
+  header{padding:56px 0 8px}
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:18px;
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:clamp(34px,6vw,52px);
+    line-height:1.08;
+    letter-spacing:-.01em;
+  }
+  h1 em{font-style:italic;color:var(--gold-soft)}
+  .dek{
+    margin-top:18px;
+    font-size:19px;
+    color:var(--muted);
+    max-width:58ch;
+  }
+  .byline{
+    margin-top:22px;
+    font-size:14px;
+    color:var(--muted);
+  }
+  .byline b{color:var(--text)}
+
+  /* Signature gamma wave */
+  .wave-band{margin:34px 0 0;overflow:hidden}
+  .wave-band svg{display:block;width:200%;height:56px}
+  @media (prefers-reduced-motion: no-preference){
+    .wave-band svg{animation:drift 14s linear infinite}
+  }
+  @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* Verdict card */
+  .verdict{
+    background:linear-gradient(160deg,var(--panel) 0%,var(--panel-2) 100%);
+    border:1px solid var(--line);
+    border-top:3px solid var(--gold);
+    border-radius:10px;
+    padding:30px 28px;
+    margin:38px 0 10px;
+  }
+  .verdict-label{
+    font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold);font-weight:700;margin-bottom:10px;
+  }
+  .verdict p.summary{font-size:18px}
+  .facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:18px;
+    margin-top:24px;
+    padding-top:22px;
+    border-top:1px solid var(--line);
+  }
+  .fact .k{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .fact .v{font-family:'Fraunces',serif;font-size:22px;font-weight:600;margin-top:3px}
+  .fact .v.gold{color:var(--gold-soft)}
+
+  /* CTA */
+  .cta{
+    display:block;text-align:center;
+    background:var(--gold);color:#141000;
+    font-weight:700;font-size:18px;
+    padding:17px 26px;border-radius:8px;
+    text-decoration:none;
+    margin:26px 0 8px;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .cta:hover{background:var(--gold-soft);transform:translateY(-1px)}
+  .cta:focus-visible{outline:3px solid var(--wave);outline-offset:3px}
+  .cta-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:8px}
+
+  /* Sections */
+  section{padding:44px 0 6px}
+  h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:clamp(25px,4vw,32px);
+    line-height:1.15;
+    margin-bottom:16px;
+  }
+  h2 .tick{color:var(--gold)}
+  section p{margin-bottom:16px;color:#D4D6E2}
+  section p b{color:var(--text)}
+
+  /* Verified vs hype */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  @media(max-width:640px){.split{grid-template-columns:1fr}}
+  .col{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:24px 22px;
+  }
+  .col h3{
+    font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+    margin-bottom:14px;font-weight:700;
+  }
+  .col.verified h3{color:var(--good)}
+  .col.hype h3{color:var(--warn)}
+  .col ul{list-style:none}
+  .col li{
+    padding:9px 0 9px 26px;
+    position:relative;
+    border-bottom:1px solid var(--line);
+    font-size:15.5px;
+    color:#D4D6E2;
+  }
+  .col li:last-child{border-bottom:none}
+  .col.verified li::before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:700}
+  .col.hype li::before{content:"△";position:absolute;left:0;color:var(--warn);font-weight:700}
+
+  /* Fit list */
+  .fit{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px 22px;margin-top:6px}
+  .fit h3{font-family:'Fraunces',serif;font-size:20px;margin-bottom:10px}
+  .fit ul{margin:0 0 6px 20px;color:#D4D6E2}
+  .fit li{margin-bottom:7px;font-size:15.5px}
+  .fit + .fit{margin-top:16px}
+
+  /* FAQ */
+  details{
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:var(--panel);
+    margin-bottom:12px;
+  }
+  summary{
+    cursor:pointer;
+    padding:16px 20px;
+    font-weight:700;
+    font-size:16px;
+    list-style:none;
+    position:relative;
+  }
+  summary::after{content:"+";position:absolute;right:20px;color:var(--gold);font-size:20px;font-weight:400}
+  details[open] summary::after{content:"–"}
+  details p{padding:0 20px 18px;color:#C7CAD8;font-size:15.5px}
+
+  /* Footer */
+  footer{
+    margin-top:64px;
+    border-top:1px solid var(--line);
+    padding:34px 0 46px;
+    font-size:13px;
+    color:var(--muted);
+  }
+  footer p{margin-bottom:12px;max-width:70ch}
+  footer .brand{
+    font-family:'Fraunces',serif;
+    color:var(--gold);
+    font-size:16px;
+    margin-bottom:14px;
+  }
+</style>
+</head>
+<body>
+
+<div class="disclosure-bar wrap-full">
+  <div class="wrap"><strong>Affiliate Disclosure:</strong> This is an independent review. If you buy through links on this page, Siemek Digital Products may earn a commission at no extra cost to you.</div>
+</div>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Siemek Reviews · Verified Breakdown · Updated July 2026</div>
+  <h1>The Genius Song: <em>A Skeptic's Review</em></h1>
+  <p class="dek">A 7-minute "brainwave audio" is the #1 selling program on ClickBank right now. I spent 20+ years in federal law enforcement and cybersecurity learning to separate signal from noise — so I put the claims under the microscope before you spend a dime.</p>
+  <p class="byline">By <b>Vince Hackett</b> · Founder, The Siemek Group · Security+, ASIS APP</p>
+</header>
+
+<div class="wave-band" aria-hidden="true">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C25,10 50,10 75,30 S125,50 150,30 S200,10 225,30 S275,50 300,30 S350,10 375,30 S425,50 450,30 S500,10 525,30 S575,50 600,30 C625,10 650,10 675,30 S725,50 750,30 S800,10 825,30 S875,50 900,30 S950,10 975,30 S1025,50 1050,30 S1100,10 1125,30 S1175,50 1200,30"
+      fill="none" stroke="#7B8CFF" stroke-width="2" opacity="0.7"/>
+    <path d="M0,30 C25,18 50,18 75,30 S125,42 150,30 S200,18 225,30 S275,42 300,30 S350,18 375,30 S425,42 450,30 S500,18 525,30 S575,42 600,30 C625,18 650,18 675,30 S725,42 750,30 S800,18 825,30 S875,42 900,30 S950,18 975,30 S1025,42 1050,30 S1100,18 1125,30 S1175,42 1200,30"
+      fill="none" stroke="#C9A227" stroke-width="1.5" opacity="0.5"/>
+  </svg>
+</div>
+
+<div class="verdict">
+  <div class="verdict-label">Bottom Line Up Front</div>
+  <p class="summary"><b>Worth a try for the curious — because the risk is near zero.</b> The science-adjacent marketing is oversold, but the product itself is a low-cost, one-time-purchase audio program with a 90-day money-back guarantee, no subscription, and a 7-minute daily commitment. If it works for you, great. If it doesn't, you get your money back.</p>
+  <div class="facts">
+    <div class="fact"><div class="k">Verdict</div><div class="v gold">4.2 / 5</div></div>
+    <div class="fact"><div class="k">Price</div><div class="v">$39 one-time</div></div>
+    <div class="fact"><div class="k">Guarantee</div><div class="v">90 days</div></div>
+    <div class="fact"><div class="k">Time / day</div><div class="v">7 minutes</div></div>
+  </div>
+</div>
+
+<a class="cta" href="https://mrsiemek.geniusbr.hop.clickbank.net/?tid=scs-genius-rev" rel="sponsored nofollow">Check Current Price on the Official Site →</a>
+<p class="cta-sub">One-time purchase · 90-day money-back guarantee · Instant digital access</p>
+
+<section id="what-it-is">
+  <h2><span class="tick">§</span> What The Genius Song Actually Is</h2>
+  <p>Strip away the marketing and here's the product: <b>a downloadable audio track you listen to for about seven minutes a day, ideally with headphones.</b> The audio is engineered around gamma-frequency brainwave entrainment — the idea that rhythmic sound can encourage your brain to sync toward a target frequency.</p>
+  <p>Gamma waves are real and well-documented in neuroscience; they're associated with focused attention and learning. The program's premise is that modern life — stress, screens, constant interruption — suppresses this activity, and that daily listening can help encourage it.</p>
+  <p>That's the whole protocol. No pills, no equipment, no subscription. You buy it once, download it, and listen.</p>
+</section>
+
+<section id="investigation">
+  <h2><span class="tick">§</span> What Checked Out vs. What's Marketing</h2>
+  <p>I approach every product the way I approached casework: verify what can be verified, flag what can't. Here's how the claims broke down.</p>
+  <div class="split">
+    <div class="col verified">
+      <h3>Verified</h3>
+      <ul>
+        <li>Gamma brainwaves exist and are linked to focus and learning in published neuroscience</li>
+        <li>One-time $39 price — no hidden subscription or rebills</li>
+        <li>90-day money-back guarantee, honored through ClickBank's refund system</li>
+        <li>Instant digital delivery; works on any phone or computer</li>
+        <li>7-minute daily commitment is accurate — it's a short track</li>
+      </ul>
+    </div>
+    <div class="col hype">
+      <h3>Take With Salt</h3>
+      <ul>
+        <li>"NASA-inspired" is a marketing frame, not a NASA endorsement or product</li>
+        <li>The "98% of people" figure traces to creativity research, loosely applied</li>
+        <li>Results are subjective — no independent clinical trial of this specific audio</li>
+        <li>Testimonials on the sales page are best-case stories, not typical results</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="fit">
+  <h2><span class="tick">§</span> Who It's For (And Who Should Skip It)</h2>
+  <div class="fit">
+    <h3>A reasonable buy if you…</h3>
+    <ul>
+      <li>Struggle with focus and want a zero-effort experiment before bigger lifestyle changes</li>
+      <li>Already enjoy meditation apps, ambient sound, or focus music</li>
+      <li>Want something with a genuine refund window so the downside is just your time</li>
+    </ul>
+  </div>
+  <div class="fit">
+    <h3>Skip it if you…</h3>
+    <ul>
+      <li>Expect a guaranteed or measurable transformation — nobody can promise that</li>
+      <li>Won't realistically listen daily (consistency is the whole mechanism)</li>
+      <li>Are dealing with a diagnosed attention or health condition — talk to a professional first</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <h2><span class="tick">§</span> Quick Questions</h2>
+  <details>
+    <summary>Is The Genius Song a scam?</summary>
+    <p>No — it's a real digital product sold through ClickBank, one of the oldest digital retailers online, with an enforced 90-day refund policy. Whether it works <i>for you</i> is subjective, which is exactly why the guarantee matters.</p>
+  </details>
+  <details>
+    <summary>How do refunds work?</summary>
+    <p>Refunds go through ClickBank directly, not the vendor. Within 90 days of purchase, you can request one from your ClickBank order confirmation email — no negotiating with a seller required.</p>
+  </details>
+  <details>
+    <summary>Do I need special headphones?</summary>
+    <p>No. Any stereo headphones or earbuds work. Headphones are recommended over speakers because the audio uses left/right channel separation.</p>
+  </details>
+  <details>
+    <summary>Is there a subscription?</summary>
+    <p>No. It's a one-time purchase with lifetime access to the download. Optional add-ons are offered at checkout — you can decline all of them.</p>
+  </details>
+</section>
+
+<a class="cta" href="https://mrsiemek.geniusbr.hop.clickbank.net/?tid=scs-genius-rev" rel="sponsored nofollow">Visit the Official Genius Song Site →</a>
+<p class="cta-sub">Backed by ClickBank's 90-day money-back guarantee</p>
+
+<footer>
+  <div class="brand">Siemek Reviews</div>
+  <p><b>Affiliate Disclosure:</b> Siemek Digital Products is an independent participant in the ClickBank affiliate program. If you purchase through links on this page, we may earn a commission at no additional cost to you. This does not influence our verdicts.</p>
+  <p><b>Disclaimer:</b> This review reflects independent research and opinion. Individual results vary, and no outcome is guaranteed. This content is for informational purposes only and is not medical advice. Consult a qualified professional regarding any health concern.</p>
+  <p>© 2026 The Siemek Group · Siemek Digital Products</p>
+</footer>
+
+</div>
+
+<!-- ── CB Siemek tracking ─────────────────────────────────────────────
+     1. Replace G-S31P1H19QD with your GA4 Measurement ID.
+     2. The script below reads ?utm_source= (or ?src=) from the inbound
+        URL and rewrites each hoplink's tid so ClickBank reporting shows
+        which platform produced the sale. Falls back to "direct".
+     ------------------------------------------------------------------>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S31P1H19QD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S31P1H19QD');
+</script>
+<script>
+(function(){
+  try{
+    var q = new URLSearchParams(location.search);
+    var raw = (q.get('utm_source') || q.get('src') || 'direct').toLowerCase();
+    var MAP = {tiktok:'tt', instagram:'ig', ig:'ig', pinterest:'pin', pin:'pin',
+               youtube:'yt', yt:'yt', email:'em', aweber:'em', facebook:'fb', direct:'dir'};
+    var src = MAP[raw] || raw.replace(/[^a-z0-9]/g,'').slice(0,6) || 'dir';
+    document.querySelectorAll('a[href*="hop.clickbank.net"]').forEach(function(a){
+      var u = new URL(a.href);
+      var base = u.searchParams.get('tid') || '';
+      u.searchParams.set('tid', (base + '-' + src).slice(0,24));
+      a.href = u.toString();
+      a.addEventListener('click', function(){
+        if (typeof gtag === 'function') {
+          gtag('event','affiliate_click',{offer: base, source: src});
+        }
+      });
+    });
+  }catch(e){}
+})();
+</script>
+
+</body>
+</html>
